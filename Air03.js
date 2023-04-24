@@ -15,9 +15,9 @@ const myConcat = (inputArray,inputSeparator) => {
 
 const displayMyConcat = (inputArgs) => {
 
-    let listParam = process.argv.slice(2)
-    let separator = listParam.slice(-1) //dernier argument
-    let listofWords = listParam.slice(0,-1) //du 1er à l'avant dernier élément
+    
+    let separator = inputArgs.slice(-1) //dernier argument
+    let listofWords = inputArgs.slice(0,-1) //du 1er à l'avant dernier élément
     let mySentence = ""
     if ( separator.length==0 || listofWords.length <= 1) {
         console.log("Error")
