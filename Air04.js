@@ -1,6 +1,8 @@
 
 const displayIntruder = (listParam) => {
+
     for (let i = 0; i < listParam.length; i++) {
+
         let currentIndex = i
         let currentCount=1
         for (let j = 0; j < listParam.length; j++) {
