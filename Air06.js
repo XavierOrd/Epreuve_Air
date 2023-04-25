@@ -1,11 +1,11 @@
-let calcAndDisplay = (inputArgs) => {
+const calcAndDisplayResult = (inputArgs) => {
 
     let lastElement = inputArgs.slice(-1) //dernier argument
     let listOfNumbers = inputArgs.slice(0, -1) //du 1er à l'avant dernier élément
     let operand = 0
     let operator = ""
 
-    if (lastElement.length == 0 || listOfNumbers.listOfNumbers == 0) {
+    if (lastElement.length == 0 || listOfNumbers.length == 0) {
         console.log("Error")
     } else {
 
@@ -34,7 +34,7 @@ let calcAndDisplay = (inputArgs) => {
     }
 };
 
-calcAndDisplay(process.argv.slice(2))
+calcAndDisplayResult(process.argv.slice(2))
 
 
 
