@@ -17,7 +17,7 @@ const sorted_insert = (inputArray, inputNumber) => {
 };
 
 
-let isValidInput = (inputParam) => {
+const isValidInput = (inputParam) => {
     let allNumbers = false
     if (inputParam.length <= 1) {
         return false
