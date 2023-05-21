@@ -43,7 +43,7 @@ let sorted_fusion = (inputFirstArray, inputSecondArray) => {
 }
 
 let inputProcess = (inputArgs) => {
-    
+
     let globalArray = []
     let firstArray = []
     let secondArray = []
@@ -65,8 +65,6 @@ let inputProcess = (inputArgs) => {
         secondArray = globalArray.slice(indexOfFusion + 1, globalArray.length)
         firstArray.sort(triCroissant)
         secondArray.sort(triCroissant)
-    } else {
-        console.log('error')
     }
 
     return [firstArray, secondArray];
